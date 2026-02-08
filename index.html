@@ -10,20 +10,20 @@
 </head>
 <body>
 
-  <div class="row mt-3">
-     <div class="col-4">
+  <div class="row">
+     <div class="col-6">
         <div class="container mt-3"> 
           <div class="card">
               <div class="card-body">
                 <div class="flag-container">
                   <div class="rounded-circle france-flag"></div>
-                  <span class="flag-text">France</span>  
-                </div>
+                  <span class="flag-text">France</span>                    
+                </div>             
               </div>
             </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-6">
         <div class="container mt-3"> 
           <div class="card">
               <div class="card-body">
@@ -35,13 +35,25 @@
             </div>
         </div>
       </div>
-       <div class="col-4">
+      <div class="col-6">
         <div class="container mt-3"> 
           <div class="card">
               <div class="card-body">
                 <div class="flag-container">
-                  <div class="bandera-espana france-flag"></div>
-                  <span class="flag-text">España</span>  
+                  <div class="bandera-belgica france-flag"></div>
+                  <span class="flag-text">Belgica</span>  
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="container mt-3"> 
+          <div class="card">
+              <div class="card-body">
+                <div class="flag-container">
+                  <div class="bandera-holanda france-flag"></div>
+                  <span class="flag-text">Belgica</span>  
                 </div>
               </div>
             </div>
@@ -92,6 +104,31 @@
     #AA151B 75%    /* Bottom Red */
   );
 }
+
+.bandera-belgica {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+ background: linear-gradient(
+    90deg,
+    #2D2926 33.33%,
+    #FFCD00 33.33%, #FFCD00 66.66%,
+    #C8102E 66.66%)
+} 
+
+.bandera-holanda {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    #C8102E 0%, #C8102E 33.33%, /* Red */
+    #FFFFFF 33.33%, #FFFFFF 66.66%, /* White */
+    #003DA5 66.66%, #003DA5 100% /* Blue */
+  );
+} 
+
+  
  
 
 </style>
