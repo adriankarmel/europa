@@ -1,0 +1,97 @@
+.flag-container {
+    display: flex;
+    align-items: center; /* Vertically aligns circle and text */
+    gap: 10px; /* Adds space between circle and text */
+}
+
+.rounded-circle{
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  /* Example France flag background */
+  background: linear-gradient(90deg, #0055A4 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #EF4135 66.6%);
+}
+ 
+.rounded-circle-ALEMANIA{
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  /* Example France flag background */
+  background: linear-gradient(to bottom, 
+    #000000 33.33%, 
+    #FF0000 33.33%, #FF0000 66.66%, 
+    #FFCC00 66.66%
+  );
+}
+
+.bandera-espana {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    #AA151B 25%,   /* Top Red */
+    #F1BF00 25%,   /* Yellow Start */
+    #F1BF00 75%,   /* Yellow End */
+    #AA151B 75%    /* Bottom Red */
+  );
+}
+
+.bandera-belgica {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+ background: linear-gradient(
+    90deg,
+    #2D2926 33.33%,
+    #FFCD00 33.33%, #FFCD00 66.66%,
+    #C8102E 66.66%)
+} 
+
+.bandera-holanda {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    #C8102E 0%, #C8102E 33.33%, /* Red */
+    #FFFFFF 33.33%, #FFFFFF 66.66%, /* White */
+    #003DA5 66.66%, #003DA5 100% /* Blue */
+  );
+} 
+
+.bandera-canada {
+  width: 50px; /* Example size */
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to right, 
+   #C8102E 0%, #C8102E 33.33%, /* Red */
+    #FFFFFF 33.33%, #FFFFFF 66.66%, /* White */
+    #C8102E 66.66%, #C8102E 100% /* Blue */);
+} 
+
+.custom-clickable-card {
+  position: relative;
+  /* Add other card styles (padding, border, etc.) */
+}
+
+.card-link-target {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* Hide the actual link text visually if desired, but ensure accessibility */
+}
+
+/* Optional: Add hover effect to the card to indicate clickability */
+.custom-clickable-card:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.ab {
+    padding: 8px;
+}
