@@ -96,3 +96,27 @@
     padding: 8px;
 }
 
+#topBtn, #bottomBtn {
+    display: none; /* Ocultar por defecto, JavaScript los mostrará/ocultará */
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 20px; /* Separación del borde inferior */
+    right: 30px; /* Separación del borde derecho */
+    z-index: 99; /* Asegurar que estén por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor a "mano" */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#bottomBtn {
+    bottom: 80px; /* Posicionarlo por encima del botón de "Principio" */
+}
+
+#topBtn:hover, #bottomBtn:hover {
+    background-color: #0056b3; /* Efecto hover */
+}
+
