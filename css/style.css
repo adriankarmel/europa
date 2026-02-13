@@ -121,3 +121,74 @@
     background-color: #0056b3; /* Efecto hover */
 }
 
+
+.frankfurt-flag {
+      width: 20px; /* Example size */
+      height: 20px;
+      border-radius: 20%;  
+      background: linear-gradient(to bottom, 
+          #ffffff 0%, #ffffff 50%, 
+          #dd0216 50%, #dd0216 100%
+      );
+  border: 1px solid #ccc; /* Opcional: borde para visualizarla */
+}
+
+.rothenburg-flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    background: linear-gradient(
+        to bottom,
+        #c8102e 0%, #c8102e 50%,
+        #ffffff 50%, #ffffff 100%
+    );
+    border: 1px solid #ccc;
+}
+
+
+.nuremberg-flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    background: linear-gradient(
+        to bottom,
+        #b3001b 0%, #b3001b 50%,
+        #ffffff 50%, #ffffff 100%
+    );
+    border: 1px solid #ccc;
+}
+
+.dresden-flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    background: linear-gradient(
+        to bottom,
+        #ffd100 0%, #ffd100 50%,
+        #000000 50%, #000000 100%
+    );
+    border: 1px solid #ccc;
+}
+
+.city-link{
+    text-decoration: none;
+    display:block;
+    border-radius:12px;
+    padding:6px;
+    transition: all .18s ease;
+}
+
+.city-link:hover{
+    background:#2b2f36;
+    transform:scale(1.02);
+}
+
+.flag-container{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.flag-text{
+    font-size:15px;
+}
