@@ -10,20 +10,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     
-     <div class="container mt-3"> 
         <button onclick="scrollToTop()" id="topBtn" title="Ir al principio">Top</button>
-        <div class="card custom-clickable-card">
-            <a href="index.html" class="card-link-target"> </a>
-            <div class="card-body">
-              <div class="flag-container">
-                <div class="rounded-circle-ALEMANIA france-flag"></div>
-                <span class="flag-text">Alemania</span>  
-              </div>
+        
+        <div class="col-12">
+            <div class="container mt-3"> 
+            <div class="card custom-clickable-card">
+                <a href="index.html" class="card-link-target"> </a>
+                <div class="card-body">
+                    <div class="flag-container">
+                    <div class="frankfurt-flag" style="width:50px;height:50px;border-radius:20%;"></div>
+                    <span class="flag-text text-light-emphasis">Frankfurt<br>
+                        Sábado 26 al Domingo 27
+                    </span>  
+                    </div>
+                </div>
+                </div>
             </div>
-          </div>
-      </div>
-
+        </div>        
+   
     <div class="container mt-3"> 
             <div class="border">     
                 <H4>Hotel</H4>
@@ -64,42 +68,7 @@
              <img src="./pictures//hotel_Frankfurt.jpg" class="rounded w-100 img-fluid">
        </div> 
 
-     
+      <script src="js/main.js"></script>
 </body>
 </html>
 
-<script>
-    // Obtener los botones
-    const topBtn = document.getElementById("topBtn");
-    const bottomBtn = document.getElementById("bottomBtn");
-
-    // Cuando el usuario se desplaza, mostrar los botones si no está en la parte superior/inferior
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        // Muestra el botón de "Principio" si el desplazamiento es mayor a 20px del top
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            topBtn.style.display = "block";
-            bottomBtn.style.display = "block";
-        } else {
-            topBtn.style.display = "none";
-            bottomBtn.style.display = "none";
-        }
-    }
-
-    // Función para ir al principio de la página
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Desplazamiento suave
-        });
-    }
-
-    // Función para ir al final de la página
-    function scrollToBottom() {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight, // Desplazar hasta el final del documento
-            behavior: 'smooth' // Desplazamiento suave
-        });
-    }
-</script>

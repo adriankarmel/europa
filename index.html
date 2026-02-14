@@ -10,96 +10,60 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <button onclick="scrollToTop()" id="topBtn" title="Ir al principio">Top</button>
-  <div class="row">
-     <div class="col-12">
-       <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-            <a href="canada.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="bandera-canada france-flag"></div>  
-                  <span class="flag-text text-light-emphasis">
-                      Canada <br>              
-                      <small>Miercoles 16</small>
-                  </span>                                    
-                </div>             
-              </div>             
-            </div>
-        </div>
-      
-        <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-             <a href="espana.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="bandera-espana france-flag"></div>
-                  <span class="flag-text text-light-emphasis">España<br>  
-                    <small>Jueves 17</small>
-                  </span>  
-                </div>
-              </div>
-            </div>
-        </div>      
-     
-       <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-            <a href="france.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="rounded-circle france-flag"></div>
-                  <span class="flag-text text-light-emphasis">Francia<br>  
-                    Jueves 17 al Sabado 19
-                  </span>                    
-                </div>             
-              </div>             
-            </div>
-        </div>        
-      </div>     
 
-      <div class="col-12">
-        <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-             <a href="belgica.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="bandera-belgica france-flag"></div>
-                  <span class="flag-text text-light-emphasis"><b>Belgica</b><br>
-                     Domingo 20 al Miercoles 23
-                  </span>  
-                </div>
-              </div>
-            </div>
+<div class="container py-3">
+
+  <!-- CANADA -->
+  <a href="canada.html" class="text-decoration-none">
+    <div class="card custom-clickable-card mb-3">
+      <div class="card-body">
+        <div class="flag-container">
+          <div class="flag canada"></div>
+          <span class="flag-text text-light-emphasis">
+            Canada <br>
+            <small>Miercoles 16</small>
+          </span>
         </div>
       </div>
+    </div>
+  </a>
 
-      <div class="col-12">
-        <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-              <a href="holanda.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="bandera-holanda france-flag"></div>
-                  <span class="flag-text text-light-emphasis">Holanda <br>
-                  Jueves 24 al Sabado 26</span>  
-                </div>
-              </div>
-            </div>
+  <!-- ESPAÑA -->
+  <a href="espana.html" class="text-decoration-none">
+    <div class="card custom-clickable-card mb-3">
+      <div class="card-body">
+        <div class="flag-container">
+          <div class="flag espana"></div>
+          <span class="flag-text text-light-emphasis">
+            España <br>
+            <small>Jueves 17</small>
+          </span>
         </div>
       </div>
+    </div>
+  </a>
 
-      
-
-      <div class="col-12">
-  <div class="container mt-3">
-    <div class="card">
-
-
+  <!-- FRANCIA -->
+  <a href="france.html" class="text-decoration-none">
+    <div class="card custom-clickable-card mb-3">
+      <div class="card-body">
+        <div class="flag-container">
+          <div class="flag francia"></div>
+          <span class="flag-text text-light-emphasis">
+            Francia <br>
+            Jueves 17 al Sabado 19
+          </span>
+        </div>
+      </div>
+    </div>
+  </a>
+<div class="card mb-3">
   <div class="card-body">
 
-    <!-- ALEMANIA TITULO -->
     <div class="flag-container mb-3">
-      <div class="rounded-circle-ALEMANIA germany-flag"></div>
+      <div class="flag alemania"></div>
       <span class="flag-text text-light-emphasis">
         Alemania
       </span>
@@ -107,147 +71,76 @@
 
     <hr>
 
-    <!-- FRANKFURT -->
-    <a href="frankfurt.html" class="city-link ">
-      <div class="row mb-2 align-items-center">
-        <div class="col-1"></div>
-        <div class="col-11">
-          <div class="flag-container">
-            <div class="frankfurt-flag"></div>
-            <span class="flag-text text-light-emphasis">
-              Frankfurt <br> Sábado 26 al Domingo 27
-            </span>
-          </div>
-        </div>
+    <a href="frankfurt.html" class="city-link text-decoration-none">
+      <div class="city-row">
+        <div class="city-flag frankfurt-flag"></div>
+        <span class="flag-text text-light-emphasis">
+          Frankfurt <br> Sábado 26 al Domingo 27
+        </span>
       </div>
     </a>
 
     <hr>
 
-    <!-- ROTHENBURG -->
-    <a href="rothenburg.html" class="city-link">
-      <div class="row mb-2 align-items-center">
-        <div class="col-1"></div>
-        <div class="col-11">
-          <div class="flag-container">
-            <div class="rothenburg-flag"></div>
-            <span class="flag-text text-light-emphasis">
-              Rothenburg <br> Sábado 26 al Domingo 27
-            </span>
-          </div>
-        </div>
+    <a href="rothenburg.html" class="city-link text-decoration-none">
+      <div class="city-row">
+        <div class="city-flag rothenburg-flag"></div>
+        <span class="flag-text text-light-emphasis">
+          Rothenburg <br> Sábado 26 al Domingo 27
+        </span>
       </div>
     </a>
 
     <hr>
 
-    <!-- NUREMBERG -->
-    <a href="nuremberg.html" class="city-link">
-      <div class="row mb-2 align-items-center">
-        <div class="col-1"></div>
-        <div class="col-11">
-          <div class="flag-container">
-            <div class="nuremberg-flag"></div>
-            <span class="flag-text text-light-emphasis">
-              Nuremberg <br> Sábado 26 al Domingo 27
-            </span>
-          </div>
-        </div>
+    <a href="nuremberg.html" class="city-link text-decoration-none">
+      <div class="city-row">
+        <div class="city-flag nuremberg-flag"></div>
+        <span class="flag-text text-light-emphasis">
+          Nuremberg <br> Sábado 26 al Domingo 27
+        </span>
       </div>
     </a>
 
     <hr>
 
-    <!-- DRESDEN -->
-    <a href="dresden.html" class="city-link">
-      <div class="row mb-2 align-items-center">
-        <div class="col-1"></div>
-        <div class="col-11">
-          <div class="flag-container">
-            <div class="dresden-flag"></div>
-            <span class="flag-text text-light-emphasis">
-              Dresden <br> Sábado 26 al Domingo 27
-            </span>
-          </div>
-        </div>
+    <a href="dresden.html" class="city-link text-decoration-none">
+      <div class="city-row">
+        <div class="city-flag dresden-flag"></div>
+        <span class="flag-text text-light-emphasis">
+          Dresden <br> Sábado 26 al Domingo 27
+        </span>
       </div>
     </a>
 
     <hr>
 
-    <!-- BERLIN -->
-    <a href="berlin.html" class="city-link">
-      <div class="row mb-2 align-items-center">
-        <div class="col-1"></div>
-        <div class="col-11">
-          <div class="flag-container">
-            <div class="berlin-flag"></div>
-            <span class="flag-text text-light-emphasis">
-              Berlin <br> Sábado 26 al Domingo 27
-            </span>
-          </div>
-        </div>
+    <a href="berlin.html" class="city-link text-decoration-none">
+      <div class="city-row">
+        <div class="city-flag berlin-flag"></div>
+        <span class="flag-text text-light-emphasis">
+          Berlin <br> Sábado 26 al Domingo 27
+        </span>
       </div>
     </a>
-
-  </div>
+  </div>  
 </div>
 
-
-  </div>
-</div>
-
-
-
-      <div class="col-12">
-        <div class="container mt-3"> 
-          <div class="card custom-clickable-card">
-             <a href="espana_1.html" class="card-link-target"> </a>
-              <div class="card-body">
-                <div class="flag-container">
-                  <div class="bandera-espana france-flag"></div>
-                  <span class="flag-text text-light-emphasis">España <br>
-                  Lunes 5, Martes 6, Miercoles 7</span>  
-                </div>
-              </div>
-            </div>
+ <!-- ESPAÑA -->
+  <a href="espana_1.html" class="text-decoration-none">
+    <div class="card custom-clickable-card mb-3">
+      <div class="card-body">
+        <div class="flag-container">
+          <div class="flag espana"></div>
+          <span class="flag-text text-light-emphasis">
+            España <br>
+            <small>Jueves 17</small>
+          </span>
         </div>
       </div>
-  </div>
+    </div>
+  </a>
+<script src="js/main.js"></script>
 </body>
 </html>
-<script>
-    // Obtener los botones
-    const topBtn = document.getElementById("topBtn");
-    const bottomBtn = document.getElementById("bottomBtn");
 
-    // Cuando el usuario se desplaza, mostrar los botones si no está en la parte superior/inferior
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        // Muestra el botón de "Principio" si el desplazamiento es mayor a 20px del top
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            topBtn.style.display = "block";
-            bottomBtn.style.display = "block";
-        } else {
-            topBtn.style.display = "none";
-            bottomBtn.style.display = "none";
-        }
-    }
-
-    // Función para ir al principio de la página
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Desplazamiento suave
-        });
-    }
-
-    // Función para ir al final de la página
-    function scrollToBottom() {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight, // Desplazar hasta el final del documento
-            behavior: 'smooth' // Desplazamiento suave
-        });
-    }
-</script>
