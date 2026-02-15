@@ -43,8 +43,8 @@
   border-radius:50%;
   background: radial-gradient(
     circle at 50% 140%,
-    rgba(0,0,0,.45),
-    transparent 60%
+    rgba(0,0,0,.18),
+    transparent 65%
   );
   pointer-events:none;
 }
@@ -89,6 +89,12 @@
     #EF4135 66.66%, #EF4135 100%);
 }
 
+.belgica {
+  background: linear-gradient(90deg, 
+    #000000 0%, #000000 33.33%, 
+    #FFE135 33.33%, #FFE135 66.66%, 
+    #ED2939 66.66%, #ED2939 100%);
+}
 .alemania{
   background: linear-gradient(to bottom,
     #000000 0%, #000000 33.33%,
@@ -189,6 +195,21 @@ background: linear-gradient(
 }
 
 
+.flag, .city-flag {
+    filter: saturate(1.5) contrast(1.15) brightness(1.05);
+}
+
+/* brillo superior más intenso */
+.flag::before, .city-flag::before {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,.95) 0%,
+        rgba(255,255,255,.45) 35%,
+        rgba(255,255,255,0) 60%
+    );
+}
+
+
 /* mini hover (queda MUY lindo en listas) */
 .city-flag:hover{
     transform: scale(1.15);
@@ -270,22 +291,12 @@ background: linear-gradient(
 }
 
 
-.flag-container{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
+
 
 .flag-text{
     font-size:15px;
 }
 
-
-.flag-container{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
 
 .city-row{
   display:flex;
