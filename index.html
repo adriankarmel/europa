@@ -15,12 +15,28 @@
 
 <div class="container py-3">
   <div class="card custom-clickable-card mb-3">
-      <div class="card-body">
-        <div class="flag-container">       
-           <i class="bi bi-watch" style="font-size: 23px;color: #ff006b;"></i>
-           <div id="diferencia" style="font-size: 24px; font-weight: bold;color:yellowgreen;"></div>
-          </span>
-        </div>
+    <div class="card text-center" >
+         Faltan...    
+         <div class="card-body">       
+              <div class="cuenta-atras">
+                <div class="grupo">
+                    <p class="grande" id="dias" style="font-weight: bolder;color: greenyellow;">00</p>
+                    <p class="chico">Dias</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="horas" style="font-weight: bolder;color: greenyellow;">00</p>
+                    <p class="chico">Horas</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="minutos" style="font-weight: bolder;color: greenyellow;">00</p>
+                    <p class="chico">Minutos</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="segundos" style="font-weight: bolder;color: greenyellow;">00</p>
+                    <p class="chico">Segundos</p>
+                </div>
+            </div>           
+      </div>
       </div>
     </div>  
 
@@ -224,9 +240,13 @@
             const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
             const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
 
+   document.getElementById("dias").innerHTML =  dias;
+            document.getElementById("horas").innerHTML = horas;
+            document.getElementById("minutos").innerHTML = minutos;
+            document.getElementById("segundos").innerHTML = segundos;  
+
             // 3. Mostrar el resultado en el DOM
-            document.getElementById("diferencia").innerHTML = 
-                `<span style=color:white;>Faltan </span> ${dias} <span style=color:white;>Dias</span> ${horas} <span style=color:white;> Horas</span> ${minutos} <span style=color:white;>Minutos</span> ${segundos} <span style=color:white;>Segundos</span>`;
+          
         }
 
         // 4. Ejecutar la función inmediatamente y luego cada 1000ms (1 segundo)
@@ -234,3 +254,14 @@
         const intervalo = setInterval(actualizarDiferencia, 1000);
 
 </script>
+
+<style>
+  .cuenta-atras{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: small;
+    gap:1rem;
+  }
+</style>
