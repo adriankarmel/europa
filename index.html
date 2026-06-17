@@ -14,57 +14,6 @@
 <button onclick="scrollToTop()" id="topBtn" title="Ir al principio">Top</button>
 
 <div class="container py-3">
-  
-
-
-    <style>
-  /* Contenedor principal de la cuenta atrás */
-  .cuenta-atras {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Espacio entre los cuadrados */
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-
-  /* Estilo para cada cuadrado */
-  .cuenta-atras .grupo {
-    background-color: #222; /* Color de fondo del cuadrado */
-    border: 2px solid rgb(174, 173, 185); /* Borde del cuadrado */
-    border-radius: 8px; /* Esquinas sutilmente redondeadas */
-    width: 50px; /* Ancho fijo */
-    height: 50px; /* Alto igual al ancho para hacerlo cuadrado */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
-  }
-
-  /* Eliminar márgenes por defecto de los textos */
-  .cuenta-atras .grande, 
-  .cuenta-atras .chico {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-  }
-
-  /* Texto del número */
-  .cuenta-atras .grande {
-    font-size: 18px;
-    font-weight: bolder;
-    color: greenyellow;
-  }
-
-  /* Texto de la etiqueta (Dias, Horas, etc.) */
-  .cuenta-atras .chico {
-    font-size: 12px;
-    color: #fff; /* Color del texto secundario */
-    text-transform: uppercase; /* Opcional: texto en mayúsculas */
-    margin-top: 4px;
-  }
-</style>
-
 <div class="card custom-clickable-card mb-3"> 
   <div class="card text-center"> 
     Faltan... 
@@ -312,13 +261,52 @@
 
 </script>
 
-<style>
-  .cuenta-atras{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+
+  <style>
+  /* Contenedor principal de la cuenta atrás */
+  .cuenta-atras {
     display: flex;
-    font-size: small;
-    gap:1rem;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los cuadrados */
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  /* Estilo para cada cuadrado */
+  .cuenta-atras .grupo {
+    background-color: #222; /* Color de fondo del cuadrado */
+    border: 2px solid rgb(174, 173, 185); /* Borde del cuadrado */
+    border-radius: 8px; /* Esquinas sutilmente redondeadas */
+    width: 50px; /* Ancho fijo */
+    height: 50px; /* Alto igual al ancho para hacerlo cuadrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+  }
+
+  /* Eliminar márgenes por defecto de los textos */
+  .cuenta-atras .grande, 
+  .cuenta-atras .chico {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  /* Texto del número */
+  .cuenta-atras .grande {
+    font-size: 18px;
+    font-weight: bolder;
+    color: greenyellow;
+  }
+
+  /* Texto de la etiqueta (Dias, Horas, etc.) */
+  .cuenta-atras .chico {
+    font-size: 12px;
+    color: #fff; /* Color del texto secundario */
+    text-transform: uppercase; /* Opcional: texto en mayúsculas */
+    margin-top: 4px;
   }
 </style>
