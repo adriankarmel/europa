@@ -14,35 +14,88 @@
 <button onclick="scrollToTop()" id="topBtn" title="Ir al principio">Top</button>
 
 <div class="container py-3">
-  <div class="card custom-clickable-card mb-3">
-    <div class="card text-center" >
-         Faltan...             
-         <div class="card-body">       
-              <div class="cuenta-atras">
-                <div class="grupo">
-                    <p class="grande" id="dias" style="font-size: 23px; font-weight: bolder;color: greenyellow;">00</p>
-                    <p class="chico">Dias</p>
-                     <hr>
-                </div>
-                <div class="grupo">
-                    <p class="grande" id="horas" style="font-size: 23px;font-weight: bolder;color: greenyellow;">00</p>
-                    <p class="chico">Horas</p>
-                     <hr>
-                </div>
-                <div class="grupo">
-                    <p class="grande" id="minutos" style="font-size: 23px;font-weight: bolder;color: greenyellow;">00</p>
-                    <p class="chico">Min</p>   
-                     <hr>                
-                </div>
-                <div class="grupo">
-                    <p class="grande" id="segundos" style="font-size: 23px;font-weight: bolder;color: greenyellow;">00</p>
-                    <p class="chico">Seg</p>
-                     <hr>
-                </div>
-            </div>           
-      </div>
-      </div>
-    </div>  
+  
+
+
+    <style>
+  /* Contenedor principal de la cuenta atrás */
+  .cuenta-atras {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los cuadrados */
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  /* Estilo para cada cuadrado */
+  .cuenta-atras .grupo {
+    background-color: #222; /* Color de fondo del cuadrado */
+    border: 2px solid rgb(174, 173, 185); /* Borde del cuadrado */
+    border-radius: 8px; /* Esquinas sutilmente redondeadas */
+    width: 80px; /* Ancho fijo */
+    height: 80px; /* Alto igual al ancho para hacerlo cuadrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+  }
+
+  /* Eliminar márgenes por defecto de los textos */
+  .cuenta-atras .grande, 
+  .cuenta-atras .chico {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  /* Texto del número */
+  .cuenta-atras .grande {
+    font-size: 24px;
+    font-weight: bolder;
+    color: greenyellow;
+  }
+
+  /* Texto de la etiqueta (Dias, Horas, etc.) */
+  .cuenta-atras .chico {
+    font-size: 12px;
+    color: #fff; /* Color del texto secundario */
+    text-transform: uppercase; /* Opcional: texto en mayúsculas */
+    margin-top: 4px;
+  }
+</style>
+
+<div class="card custom-clickable-card mb-3"> 
+  <div class="card text-center"> 
+    Faltan... 
+    <div class="card-body"> 
+      <div class="cuenta-atras"> 
+        
+        <div class="grupo"> 
+          <p class="grande" id="dias">00</p> 
+          <p class="chico">Días</p> 
+        </div> 
+        
+        <div class="grupo"> 
+          <p class="grande" id="horas">00</p> 
+          <p class="chico">Horas</p> 
+        </div> 
+        
+        <div class="grupo"> 
+          <p class="grande" id="minutos">00</p> 
+          <p class="chico">Min</p> 
+        </div> 
+        
+        <div class="grupo"> 
+          <p class="grande" id="segundos">00</p> 
+          <p class="chico">Seg</p> 
+        </div> 
+        
+      </div> 
+    </div> 
+  </div> 
+</div>
+
 
   <!-- CANADA -->
   <a href="canada.html" class="text-decoration-none">
