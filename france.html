@@ -208,7 +208,9 @@
                     </tr>                       
                 </table>
                 <div class="container mt-3"> 
-                        <iframe src="./pictures/Tickets_Torre_E.pdf" width="100%" height="800px">Tickets_Torre_E</iframe>
+                     <div class="pdf-container">
+                        <iframe class="pdf-iframe" src="./pictures/Tickets_Torre_E.pdf" width="100%" height="800px">Tickets_Torre_E</iframe>
+                    </div>
                 </div>          
             </div>  
         </div>    
@@ -282,4 +284,18 @@
          <script src="js/main.js"></script>
     </body> 
 </html>
-
+<style>
+        /* Makes the container scale beautifully on mobile phones */
+        .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* Takes up 80% of the mobile screen height */
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+        .pdf-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
